@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .t{
+        width:100px;
+        height: 200px;
+        background: green;
+         /* transition:1 2 3 4  
+        1.要执行过渡效果的css属性 
+        2.过渡效果要执行的时间  
+        3.速度曲线  linear  ease ease-in  ease-out ease-in-out   
+                    贝塞尔曲线(开始点的x坐标，开始点的y坐标，结束点的x坐标，结束点的y坐标，)
+        4.delay  过渡效果 延迟的时间
+        */
+        
+        
+        transition:width 4s cubic-bezier(0.83, 1.16, 1, 0.26) 2s,
+                    height 2s ease 1s;
+    }
+    .t:hover{
+        width: 10px;
+        height: 400px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="t"></div>
+</body>
+</html>

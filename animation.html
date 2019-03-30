@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .run{
+            width:200px;
+            height: 200px;
+            background: red;
+            position: absolute;
+            
+
+            /* 2.在对应的元素上使用关键正 */
+            /* animation:
+                name:（动画）关键帧名字，
+                duration:动画执行的时间
+                timimg-function:速度曲线 
+                delay:动画执行延迟时间
+                count:执行的次数
+                direction:执行的方向。
+             ; 
+            */
+
+            /* animation-fill-mode: forwards 动画效果保留到最后一帧*/
+            animation:run 5s linear 2s 2 alternate-reverse forwards;
+
+        }
+
+
+        /* 1.创建关键帧 
+            @keyframes
+        */
+
+        @keyframes run{
+            /* 0%{
+                top:0;
+                left:0;
+            }
+            25%{
+                top:0;
+                left:500px;
+                transform: rotate(250deg);
+            }
+            50%{
+                top:400px;
+                left:500px;
+                transform: rotate(550deg);
+            }
+            75%{
+                top:400px;
+                left:0px;
+                transform: rotate(350deg);
+            }
+            100%{
+                top:0;
+                left:0;
+            } */
+            from{
+                top:0;
+                left:0;
+            }
+            to{
+                top:400px;
+                left:500px;
+                transform: rotate(550deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="run"></div> 
+</body>
+</html>
